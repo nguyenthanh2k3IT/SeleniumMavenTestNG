@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunByClass" verbose="1">
+    <test name="FirstTest">
+        <classes>
+<!--            <class name="com.thanhtester.Test1.TestNG"/>-->
+            <class name="com.thanhtester.Test1.TestNG_02">
+                <methods>
+                    <include name="testEditCustomer"></include>
+                </methods>
+            </class>
+
+<!--            <class name="com.thanhtester.Test1.TestNG_03"/>-->
+        </classes>
+    </test>
+</suite>
