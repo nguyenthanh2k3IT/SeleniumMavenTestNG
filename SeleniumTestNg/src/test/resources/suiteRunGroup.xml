@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunByClass" verbose="1">
+    <test name="Run ket hop">
+        <packages>
+            <package name="com.thanhtester.Test1.DemoTestNG.*">
+                <exclude name="com.thanhtester.Test1.DemoTestNG.Test_1"></exclude>
+            </package>
+        </packages>
+        <classes>
+            <class name="com.thanhtester.Test1.TestNG"/>
+            <class name="com.thanhtester.Test1.TestNG_02"/>
+            <class name="com.thanhtester.Test1.TestNG_03"/>
+
+            <class name="com.thanhtester.Test1.TestNG_02">
+                <methods>
+                    <include name="testEditCustomer"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

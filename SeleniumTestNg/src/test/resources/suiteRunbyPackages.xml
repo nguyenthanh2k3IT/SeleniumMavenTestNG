@@ -2,8 +2,13 @@
 
 <suite name="SuiteRunByClass" verbose="1">
     <test name="FirstTest">
+<!--        <packages>-->
+<!--            <package name="com.thanhtester.Test1.DemoTestNG.Test_1"></package>-->
+<!--        </packages>-->
         <packages>
-            <package name="com.thanhtester.Test1.DemoTestNG.Test_1"></package>
+            <package name="com.thanhtester.Test1.DemoTestNG.*">
+                <exclude name="com.thanhtester.Test1.DemoTestNG.Test_1"></exclude>
+            </package>
         </packages>
     </test>
 </suite>
